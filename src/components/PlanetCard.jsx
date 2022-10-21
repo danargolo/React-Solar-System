@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 class PlanetCard extends React.Component {
   render() {
@@ -10,7 +10,7 @@ class PlanetCard extends React.Component {
         <span data-testid="planet-name">
           { planetName }
         </span>
-        <img src={planetImage} alt= {`Planeta ${planetName}`}></img>
+        <img src={ planetImage } alt={ `Planeta ${planetName}` } />
       </div>
     );
   }
