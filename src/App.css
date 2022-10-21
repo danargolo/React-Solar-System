@@ -1,3 +1,13 @@
 .App {
   text-align: center;
 }
+
+.planets {
+  display: flex;
+  width: 20px;
+}
+
+.planet-card {
+  display: block;
+  align-items: center;
+}
