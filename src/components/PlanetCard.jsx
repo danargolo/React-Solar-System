@@ -1,15 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+const teste = () => {
+  const a = 123;
+  const b = 456;
+  return console.log(a+b);
+};
+
 class PlanetCard extends React.Component {
+  
   render() {
+    console.log(this)
+    
     const { planetName, planetImage } = this.props;
     return (
       <div data-testid="planet-card" className="planet-card">
-        <span data-testid="planet-name">
+        <span data-testid="planet-name" className="planet-name">
           { planetName }
         </span>
-        <img src={ planetImage } alt={ `Planeta ${planetName}` } />
+        <img
+          onClick= {() => {teste()}}
+          src={ planetImage }
+          className={ planetName }
+          alt={ `Planeta ${planetName}` }
+        />
       </div>
     );
   }

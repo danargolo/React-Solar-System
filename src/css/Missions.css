@@ -1,0 +1,10 @@
+.missions {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px solid red;
+}
+
+.missionCard {
+  margin: 2px 10px;
+}
